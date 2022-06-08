@@ -1,13 +1,61 @@
-body {
+:root {
+  --border-radius: 6px;
+  --transition: all linear 0.2s;
+  --max-width: 1170px;
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  height: 3rem;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.25em 0.75em;
+  font-size: inherit;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.toggle-btn {
+  font-size: 1.25rem;
 }
