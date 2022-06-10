@@ -90,10 +90,9 @@ a {
 }
 
 .sidebar-center {
-  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1em;
   width: 80%;
 }
 
@@ -102,6 +101,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid rgba(1, 1, 1, 0.25);
 }
 
@@ -109,4 +109,6 @@ a {
   margin-left: 1rem;
   padding: 0.25rem;
   color: inherit;
+  display: flex;
+  gap: 0.75em;
 }

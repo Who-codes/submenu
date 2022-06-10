@@ -6,7 +6,6 @@ export default function Sidebar() {
   const { isSidebarOpen } = useGlobalContext();
   return (
     <aside className={`sidebar ${isSidebarOpen && "show"}`}>
-      {/* <div> */}
       <ul className="sidebar-center">
         {sublinks.map((link, index) => {
           const { page, links } = link;
@@ -26,7 +25,6 @@ export default function Sidebar() {
           );
         })}
       </ul>
-      {/* </div> */}
     </aside>
   );
 }
