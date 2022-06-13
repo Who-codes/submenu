@@ -131,11 +131,16 @@ main h2 {
 main p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 500px;
 }
 
 main .main-btn {
   background-color: #333;
   color: #fff;
+}
+
+main .sign-btn {
+  margin-left: 1rem;
 }
 
 .main-btn:hover {
@@ -148,4 +153,12 @@ main .main-btn {
 
 .submenu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar,
+  .nav .btn,
+  main .sign-btn {
+    display: none;
+  }
 }

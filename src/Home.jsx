@@ -9,6 +9,7 @@ export default function Home() {
         this projects are useState, usereference and useContext
       </p>
       <button className="btn main-btn">Learn More</button>
+      <button className="btn main-btn sign-btn">Sign up</button>
     </main>
   );
 }
