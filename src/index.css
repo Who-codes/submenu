@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.875rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -59,6 +59,15 @@ a {
   justify-content: space-between;
 }
 
+.logo {
+  cursor: default;
+}
+
+.nav-links,
+nav .sign-btn {
+  display: none;
+}
+
 .btn {
   padding: 0.25em 0.75em;
   font-size: 1rem;
@@ -66,10 +75,13 @@ a {
   border-color: transparent;
   border-radius: var(--border-radius);
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .main {
   position: relative;
+  height: 92vh;
+  background-color: aquamarine;
 }
 
 .sidebar {
@@ -77,6 +89,7 @@ a {
   width: 60%;
   background-color: aqua;
   position: absolute;
+  z-index: 1;
   left: 40%;
   transition: var(--transition);
   transform: translateX(100%);
@@ -111,4 +124,25 @@ a {
   color: inherit;
   display: flex;
   gap: 0.75em;
+}
+
+@media screen and (min-width: 768px) {
+  .nav .toggle-btn {
+    display: none;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  .nav .sign-btn {
+    display: block;
+  }
 }

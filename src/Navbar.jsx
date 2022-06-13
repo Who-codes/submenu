@@ -5,7 +5,7 @@ import { useGlobalContext } from "./context";
 export default function Navbar() {
   const { isSidebarOpen, handleSidebar } = useGlobalContext();
   return (
-    <nav className={`nav`}>
+    <nav className="nav">
       <div className="nav-center">
         <div className="nav-header">
           <h2 className="logo">Logo</h2>
@@ -13,6 +13,18 @@ export default function Navbar() {
             {isSidebarOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
+        <ul className="nav-links">
+          <li>
+            <button className="btn link-btn">products</button>
+          </li>
+          <li>
+            <button className="btn link-btn">developers</button>
+          </li>
+          <li>
+            <button className="btn link-btn">company</button>
+          </li>
+        </ul>
+        <button className="btn sign-btn">sign in</button>
       </div>
     </nav>
   );
