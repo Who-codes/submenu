@@ -5,6 +5,11 @@ import { useGlobalContext } from "./context";
 export default function Navbar() {
   const { isSidebarOpen, handleSidebar, openSubmenu, closeSubmenu } =
     useGlobalContext();
+
+  const displaySubmenu = (e) => {
+    openSubmenu();
+  };
+
   return (
     <nav className="nav">
       <div className="nav-center">
@@ -16,17 +21,17 @@ export default function Navbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <button className="btn link-btn" onMouseOver={openSubmenu}>
+            <button className="btn link-btn" onMouseOver={displaySubmenu}>
               products
             </button>
           </li>
           <li>
-            <button className="btn link-btn" onMouseOver={openSubmenu}>
+            <button className="btn link-btn" onMouseOver={displaySubmenu}>
               developers
             </button>
           </li>
           <li>
-            <button className="btn link-btn" onMouseOver={openSubmenu}>
+            <button className="btn link-btn" onMouseOver={displaySubmenu}>
               company
             </button>
           </li>

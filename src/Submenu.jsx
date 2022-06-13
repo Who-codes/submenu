@@ -3,7 +3,5 @@ import { useGlobalContext } from "./context";
 
 export default function Submenu() {
   const { isSubmenuopen } = useGlobalContext();
-  return (
-    <aside className={`submenu ${isSubmenuopen && "show"}`}>submenu</aside>
-  );
+  return <aside className={`submenu`}>submenu</aside>;
 }

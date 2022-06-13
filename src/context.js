@@ -5,18 +5,18 @@ const AppContext = React.createContext();
 export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const [isSublmenuOpen, setISSubmenuOpen] = useState("true");
+  const [isSublmenuOpen, setIsSubmenuOpen] = useState(false);
 
   const handleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   const openSubmenu = () => {
-    setISSubmenuOpen(true);
+    setIsSubmenuOpen(true);
   };
 
   const closeSublmenu = () => {
-    setISSubmenuOpen(false);
+    setIsSubmenuOpen(false);
   };
 
   return (
