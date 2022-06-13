@@ -19,7 +19,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.875rem;
-  overflow: hidden;
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
@@ -83,6 +84,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .show {
@@ -111,4 +113,39 @@ a {
   color: inherit;
   display: flex;
   gap: 0.75em;
+}
+
+main {
+  min-height: 92vh;
+  background-color: aquamarine;
+  padding: 2rem 1.5rem;
+  gap: 1.25rem;
+  position: relative;
+}
+
+main h2 {
+  font-size: 3rem;
+  margin: 4rem 0 2rem;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+main .main-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn:active {
+  transform: scale(0.9);
+}
+
+.submenu {
+  display: none;
 }
